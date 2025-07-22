@@ -1,0 +1,58 @@
+body{
+    background-image: url("pback.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: #f0f8ff; 
+    font-family: 'Arial', sans-serif; 
+    color: #333; 
+    margin: 0;
+    padding: 20px; 
+
+}
+#princess-select {
+    background-color: rgba(255, 255, 255, 0.8); 
+    text-align: center;
+    margin-top: 50px; 
+    gap: 20px; 
+    padding: 20px;
+}
+.princess-grid {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px; 
+  margin: 0 auto;
+}
+
+
+
+.princess {
+  background-color: #fff;
+  border: 2px solid #f06292;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 200px;
+  height: 200px;
+}
+
+.princess:hover {
+  transform: scale(1.05);
+  background-color: #f8bbd0;
+}
+
+.princess img {
+  width: 90%;
+  height: 70%;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.princess p {
+  margin: 10px 0 0;
+  font-weight: bold;
+  color: #880e4f;
+}

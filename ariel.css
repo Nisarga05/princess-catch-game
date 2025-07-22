@@ -1,0 +1,201 @@
+body{
+    
+    background-image: url("arielback.jpg");
+    background-color: #f6cdbc;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+#gamebox {
+  position: relative; /* this anchors all absolute children */
+  width: 1000px;
+  height: 600px;
+  background-color: #f5c4d3;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  background-image: url("ariel2back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+}
+
+#player {
+  position: absolute; 
+  bottom: 0;         
+  left: 0px;          
+  width: 90px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ .hud {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  z-index: 2;
+  pointer-events: none;
+}
+.falling-object {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.rose-object {
+  background-image: url("pearl.png");
+}
+.book-object {
+  background-image: url("music.png");
+}
+.bad-object {
+  background-image: url("eels.png");
+}
+
+.overlay {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.start-box {
+  
+  background-image: url("ariel.start.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 25px rgba(255,255,255,0.6);
+  width: 450px;
+  height: 230px;
+}
+#start-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #ffe99a;
+  color: #0f0a0a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 90px;
+}
+
+#start-btn:hover {
+  background: #ffffff;
+  box-shadow: 0 0 20px #fff;
+  transform: scale(1.1);
+}
+
+
+
+#gameover-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#gameover-overlay.hidden {
+  display: none;
+}
+
+.gameover-box {
+  background-image: url("arielend.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  width: 500px;
+  height: 250px;
+}
+
+
+.gameover-box h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.gameover-box p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.gameover-box button {
+  background: #ff5c5c;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gameover-box button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gameover-box button:hover {
+  background: #000;
+  box-shadow: 0 0 20px #fff;
+}
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #f06292;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #c2185b;
+}
